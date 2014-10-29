@@ -7,14 +7,13 @@
 
 #include "huffman.h"
 
-HCode * HuffmanCoding(int *tab, int n){
-
+HCode * getHuffmanCode(int *tab, int n, HNode * ht)
+{
 	HCode * hc;
-	HNode * ht;
-	ht = createHuffmanTree(tab,n);
-	
-	int i,c,f,start;
 	hc = (HCode *)malloc(n*sizeof(HCode));
+
+	int i,c,f,start;
+	
 	for (i=0; i<n; ++i)
 	{
 		start = n-1; //最后一位为hc[i].bit[n]
@@ -30,7 +29,8 @@ HCode * HuffmanCoding(int *tab, int n){
 	return hc;
 }
 
-HNode * createHuffmanTree(int * tab, int n){
+HNode * createHuffmanTree(int * tab, int n)
+{
 
 	if(n <= 1) return;
 	int m = 2*n - 1;
