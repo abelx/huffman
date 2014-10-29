@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+HCode	huffman.h	/^typedef struct HCode{$/;"	s
+HCode	huffman.h	/^} HCode;$/;"	t	typeref:struct:HCode
+HNode	huffman.h	/^ } HNode;$/;"	t	typeref:struct:HNode
+HNode	huffman.h	/^typedef struct HNode{$/;"	s
+HuffmanCoding	huffman.c	/^HCode * HuffmanCoding(int *tab, int n){$/;"	f
+MAXBIT	huffman.h	14;"	d
+MAXVALUE	huffman.h	11;"	d
+TABLEN	huffman.h	12;"	d
+bit	huffman.h	/^	char	bit[MAXBIT];$/;"	m	struct:HCode
+createHuffmanTree	huffman.c	/^HNode * createHuffmanTree(int * tab, int n){$/;"	f
+createTab	main.c	/^void createTab(int * tab,char * file){$/;"	f
+decoding	main.c	/^void decoding(char * sfile, char * dfile){$/;"	f
+doCoding	main.c	/^void doCoding(HCode * hc,char *sfile, char *dfile,int *tab,int n){$/;"	f
+lchild	huffman.h	/^	int		parent,lchild,rchild;$/;"	m	struct:HNode
+main	cat2.c	/^int main(int argc, char * argv[]){$/;"	f
+main	main.c	/^int main(int argc,char *argv[]){$/;"	f
+naerror	huffman.h	13;"	d
+parent	huffman.h	/^	int		parent,lchild,rchild;$/;"	m	struct:HNode
+query	main.c	/^void query(char * file){$/;"	f
+rchild	huffman.h	/^	int		parent,lchild,rchild;$/;"	m	struct:HNode
+start	huffman.h	/^	int				start;$/;"	m	struct:HCode
+value	huffman.h	/^	char	value;$/;"	m	struct:HNode
+weight	huffman.h	/^	int		weight;$/;"	m	struct:HNode
